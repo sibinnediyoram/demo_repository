@@ -2,8 +2,8 @@ import * as eks from 'aws-cdk-lib/aws-eks';
 import { EnvironmentConfig } from '../types';
 
 export const prodEnvironment: EnvironmentConfig = {
-  account: process.env.CDK_DEFAULT_ACCOUNT ?? '123456789012',
-  region: process.env.CDK_DEFAULT_REGION ?? 'us-east-1',
+  account: '123456789013',
+  region: 'eu-central-1',
   stackName: 'aws-cdk-infra-prod',
   vpc: {
     cidr: '10.20.0.0/16',
